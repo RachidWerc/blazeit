@@ -1,0 +1,81 @@
+<div class="dev">
+
+    
+  <p-dataView class="dataview" #dv layout="grid" [value]="list" paginatorPosition="top" [paginator]="true" [rows]="8" filterBy="DevName,role">
+    <ng-template pTemplate="header">
+      <div class="list_header">
+
+        <div class="search_container">
+          <i class="pi pi-search"></i>
+          <input type="search" pInputText placeholder="Search by Name or role"
+            (input)='dv.filter(target($event).value)'>
+        </div>
+
+      </div>
+    </ng-template>
+
+
+    <ng-template let-item pTemplate="gridItem">
+
+      <p-card class="cardo">
+
+        <div class="grid_container">
+          <div style="background-image : url({{item.imgUrl}})" class="entry_pic">
+
+          </div>
+          <div class="entr_name">
+            <h3>{{item.DevName}}</h3>
+          </div>
+
+          <div class="entry_role">
+            {{item.role}}
+          </div>
+
+          <br>
+
+
+          <div class="entry_dynamicBox">
+            <div class="entry_note">
+
+              <p-rating [(ngModel)]="item.rating" stars:number='5' readonly:boolean=true [cancel]="false"></p-rating>
+
+              <span class="entry_reviews"></span>| {{item.reviews}} Reviews
+            </div>
+
+            <div class="entry_matchContainer">
+              <div class="entry_matchLvl">Match level : <span>{{item.match_Lvl | titlecase}}</span></div>
+              <p-progressBar class="lvl" [value]="item.bar"></p-progressBar>
+
+            </div>
+
+
+          </div>
+
+          <div class="entry_dynamic_hover">
+
+            <div class="hire_and_engage">
+              <button pButton pRipple type="button" label="Engage" class="p-button-rounded"></button>
+              <button pButton pRipple type="button"  pButton label="Hire!" class="p-button-rounded"></button>
+            </div>
+            <span class="profile">
+              <i class="pi pi-user"></i> View profile
+            </span>
+
+          </div>
+
+
+          <div class="entry_description">
+            <p><span>${{item.wage}}</span>/Hr | {{item.address}}</p>
+          </div>
+        </div>
+      </p-card>
+    </ng-template>
+    <ng-template pTemplate="footer"></ng-template>
+
+  </p-dataView>
+
+
+
+  <!-- Comments are overated lol -->
+  <!-- Hi Houssem -->
+</div>

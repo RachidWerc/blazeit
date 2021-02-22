@@ -1,0 +1,162 @@
+.list_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_header span {
+  margin: 10px;
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 50%;
+}
+.entry_note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.entry_description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entry_matchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .p-avatar-image, .p-avatar-circle		{
+
+    object-fit : contain
+} */
+
+.entry_pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.grid_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.lvl {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cardo:hover {
+  border: 5px solid #ffc107;
+}
+
+.entry_description {
+  margin-bottom: -15px;
+}
+
+.search_container {
+  display: flex;
+  align-items: center;
+  border: 3px solid grey;
+  background-color: white;
+}
+
+.search_container input {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+}
+.search_container i {
+  padding: 4px;
+  background-color: white;
+}
+
+.entry_role {
+  color: grey;
+}
+
+.entry_matchLvl span {
+  font-weight: bold;
+}
+
+.entry_description p {
+  color: grey;
+}
+
+.entry_description p span {
+  font-weight: bold;
+  color: rgb(65, 65, 65);
+}
+
+.entry_dynamic_hover button {
+  margin: 10px;
+  color: white;
+}
+.entry_dynamic_hover i {
+  margin-right: 5px;
+}
+
+.entry_dynamic_hover button:hover {
+  background-color: white;
+  color: #ffc107;
+}
+
+.entry_dynamic_hover span {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.entry_dynamic_hover span:hover {
+  color: rgb(0, 56, 130);
+}
+
+.entry_dynamic_hover {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.cardo:hover .entry_dynamicBox {
+  display: none;
+}
+
+.cardo:hover .entry_dynamic_hover {
+  display: flex;
+}
+
+.p-grid .p-nogutter {
+  background-color: #d4d1d140;
+}
+
+.dev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 203px;
+  margin-top: 5px; /* 5 + 64 = nice */
+  border-left: 45px solid #ffc107;
+  padding-left: 69px;
+}
+
+.cardo {
+  margin: 15px;
+  margin-left: 16px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%),
+    0 1px 3px 0 rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  display: flex;
+}
