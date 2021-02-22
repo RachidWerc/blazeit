@@ -12,7 +12,7 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
 import {CardModule} from 'primeng/card';
 import {RatingModule} from 'primeng/rating';
 import {ProgressBarModule} from 'primeng/progressbar';
-import {ToastModule} from 'primeng/toast';
+import {TreeModule} from 'primeng/tree';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import {ToastModule} from 'primeng/toast';
     CardModule,
     RatingModule,
     ProgressBarModule,
-    ToastModule
+    TreeModule,
     
   ],
   providers: [],
